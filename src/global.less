@@ -1,0 +1,12 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* 去掉地图点击蓝色边框 */
+.esri-view .esri-view-surface--inset-outline:focus::after {
+  content: none !important;
+  outline: auto 0px Highlight !important;
+  outline: auto 0px -webkit-focus-ring-color !important;
+}
